@@ -1,0 +1,107 @@
+<!-- Original broken code -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>My Webpage</title>
+  <meta charset="UTF-8">
+
+<body>
+  </head>
+  <h1>Welcome to my site<h1>
+      <p>This is my first paragraph
+        <img src="image.jpg" alt="A sample image">
+        <a href="page2.html">Go to Page 2</a </body>
+
+</html>
+
+<!-- Corrected HTML Code / Validated on walidator.w3.org -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>My Webpage</title>
+</head>
+
+<body>
+  <h1>Welcome to my site</h1>
+  <p>This is my first paragraph</p>
+  <img src="image.jpg" alt="A sample image">
+  <a href="page2.html">Go to Page 2</a>
+</body>
+
+</html>
+
+<!-- Errors listed from validator.w3.org:
+ 
+1. Warning - add lang attribute to Html start tag - line 1
+2. Error stray end tag head - line 9
+3. Error heading cannot be a child of another heading - line 10
+4. Error element p not allowed as child of element h1 in this context - line 11
+5. Error saw < when expecting an attribute name. Probable cause: Missing < immediately before - line 13
+6. Error a slash was not immediately followed by > - line 13
+7. Error End tag had attributes - line 13
+8. Error End end tag for html seen, but there were unclosed elements - line 15
+9. Error Unclosed element h1 - line 10
+ -->
+
+<!--  Errors found and fixed using Microsofft Copilot AI
+ 
+  1.Validator Error: Warning - add lang attribute to Html start tag - line 1
+    Miskate: Missing lang attribute
+    Why: Accessibility issue where the asistive technology mispronunce guess incorrectly, prevents browser from interpreting correctly, standard practice for usability and coding 
+    Fix: add lang attribute to html tag
+    Example: <html lang="en">
+
+  2.Validator Error: Error stray end tag head - line 9
+    Mistake: The end tag </head> comes  after the <body> interrupting the document flow.
+    Why it's wrong: Prevents browswer from interpreting head data correctly because the <body> cannot still be in the <head>.
+    Fix: Move <head> closing tag </head> to before the opening <body> tag.
+    Example fix: <head><title>My Webpage</title><meta charset="UTF-8"><body></head>
+
+  3.Validator Error: heading cannot be a child of another heading - line 10
+    Mistake: <h1> tag not closed 
+    Why it's wrong: <h1> tags must be closed or the browser add the style to everything.
+    Fix: Add a heading end tag after heading content
+    Example fix: <h1>Welcome to my site</h1>
+
+  4.Validator Error: Error element p not allowed as child of element h1 in this context - line 11
+    Mistake: <p> element not closed in combination with <h1> element not closed.
+    Why it's wrong: the browswer doesn't auto-close the tag which renders the content all in the <p> element
+    Fix: add end tag after content in <p> element
+    Example fix: <p>This is my first paragraph</p>
+
+  5.Validator Error: Error saw < when expecting an attribute name. Probable cause: Missing < immediately before - line 13
+    Mistake: <a> tag not close with an end tag >.
+    Why it's wrong: the missing tag means the browser will load all the following context as a link too
+    Fix: Close anchor with a final tag >
+    Example fix: <a href="page2.html">Go to Page 2</a>
+
+  6.Validator Error: Error a slash was not immediately followed by > - line 13
+    Mistake: <a> closing tag missing final >.
+    Why it's wrong: Without the closing tag the broweser can't render properly and may make everything a link and end tags can't have attributes which breaks the structure of the code
+    Fix: close <a> tag with final >
+    Example fix: <a href="page2.html">Go to Page 2</a>
+
+  7.Validator Error: Error End tag had attributes - line 13
+    Mistake: <html> tag read as an attribute to the unclosed <a> tag.
+    Why it's wrong: <a> end tag isn't there making the browswer think the a tag has attributes which the browser cannot render and then considers the html end tag as an attribute which breaks the structure of the code
+    Fix: Add closing <a> tag using a slash after the content
+    Example fix: <a href="page2.html">Go to Page 2</a> </body></html>
+
+  8.Validator Error: Error End end tag for html seen, but there were unclosed elements - line 15
+    Mistake: missing end tag for <a> element causing the <html> element to be considered an attribute of the <a> tag.
+    Why it's wrong: The anchor tag before the html tag is not close.This causes the browser to think the a tag has attributes which breaks the structure of the code.
+    Fix: Add a closing > to the <a> end tag.
+    Example fix: <a href="page2.html">Go to Page 2</a>
+
+  9.Validator Error: Error Unclosed element h1 - line 10
+    Mistake: The <h1> tag is not closed. 
+    Why it's wrong: The browser needs start and end tags to render content correctly which is an accessibilty issue and produces inconsistent styling.
+    Fix: Add closing tag </h1> after <h1> content.
+    Example fix: <h1>Welcome to my site</h1> 
+
+     -->
