@@ -1,11 +1,135 @@
+html,
+body {
+  background-color: #e6e7ee;
+  font-size: 22px;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  height: 100vh;
+}
+
 h1 {
   font-family: "Roboto Mono", sans-serif;
   color: #272757;
-  font-size: 2.5em;
+  font-size: 2rem;
 }
 
-p {
+p,
+a {
   font-family: "Old Standard TT", serif;
   color: #272757;
-  font-size: 1.2em;
+  font-size: 1rem;
+  padding: 0;
+  margin: 0;
+}
+
+h1 {
+  display: inline-block;
+  padding: 5px 15px;
+}
+
+.hero {
+  margin: 0;
+  padding: 0;
+  background:
+    linear-gradient(rgba(237, 234, 234, 0.557), rgba(233, 233, 233, 0.789)),
+    url("/images/background-pencil.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.hero div {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-end;
+  justify-content: space-evenly;
+}
+
+.hero div p {
+  background-color: #a6a4df;
+  width: 50%;
+  text-align: right;
+  align-self: flex-end;
+  border-radius: 5px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0;
+  padding: 8px 12px;
+  font-weight: 600;
+}
+
+.hero h1 {
+  background-color: #a6a4df;
+  align-self: flex-start;
+  text-align: center;
+  border-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+}
+
+.hero div a {
+  background-color: #e6e7ee;
+  text-align: center;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 10px;
+  box-shadow: 0.2em 0.2em 0.5em rgba(0, 0, 0, 0.207);
+  padding: 8px 10px;
+  margin: 0 20px;
+  width: 150px;
+  align-self: flex-end;
+  position: relative;
+}
+
+.hero a:hover {
+  background-color: #a6a4df;
+  color: #e6e7ee;
+}
+
+blockquote {
+  font-size: 0.8rem;
+  font-weight: bold;
+  font-style: italic;
+  margin: 0;
+  padding: 5px 15px;
+}
+
+header div {
+  display: flex;
+  align-items: center;
+}
+
+div span {
+  padding: 0px 5px;
+}
+
+header div,
+header nav {
+  padding: 0 10px;
+}
+
+header,
+footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+ul li {
+  display: inline;
+}
+
+footer {
+  padding: 0px 5px;
+  margin: 0;
 }
