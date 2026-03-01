@@ -35,7 +35,7 @@ h1 {
   padding: 0;
   background:
     linear-gradient(rgba(237, 234, 234, 0.557), rgba(233, 233, 233, 0.789)),
-    url("/webdevelopment/images/background-pencil.jpg");
+    url("webdevelopment/images/background-pencil.jpg");
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -133,4 +133,3 @@ footer {
   padding: 0px 5px;
   margin: 0;
 }
-
