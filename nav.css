@@ -1,8 +1,5 @@
 header {
   width: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   background: initial;
   background-color: #a6a4df;
 }
@@ -31,4 +28,11 @@ nav li {
 
 nav ul li:hover {
   background-color: #a6a4df;
+}
+
+header .header-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
