@@ -1,19 +1,18 @@
 header {
   width: 100%;
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   background: initial;
   background-color: #a6a4df;
 }
 
 nav {
-  max-width: 650px;
   width: 100%;
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 nav ul {
