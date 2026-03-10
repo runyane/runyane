@@ -4,7 +4,8 @@ header {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  background: #272757;
+  background: initial;
+  background-color: #272757;
 }
 
 nav {
