@@ -29,6 +29,7 @@ nav li a {
 
 nav li a:hover {
   color: #e6e7ee;
+  font-size: 1.5rem;
 }
 
 .header {
