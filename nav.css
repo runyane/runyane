@@ -1,12 +1,10 @@
-body {
-  background-color: #a6a4df;
-}
 header {
   width: 100%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  background: #272757;
 }
 
 nav {
