@@ -11,21 +11,24 @@ nav {
 }
 
 nav ul {
-  display: inline-block;
   list-style: none;
 }
 
 nav li {
   display: inline-block;
-  color: #272757;
-  font-weight: 600;
   margin: 3px 0;
   padding: 0 4px;
-  font-size: 0.8em;
 }
 
-nav ul li:hover {
-  background-color: #a6a4df;
+nav li a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  color: #272757;
+}
+
+nav li a:hover {
+  color: #e6e7ee;
 }
 
 .header {
