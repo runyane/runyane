@@ -1,6 +1,4 @@
 header {
-  width: 100%;
-  display: block;
   background: initial;
   background-color: #a6a4df;
 }
@@ -30,10 +28,9 @@ nav ul li:hover {
   background-color: #a6a4df;
 }
 
-header .header-container {
-  width: 100%;
+.header-container {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
 }
