@@ -1,6 +1,6 @@
 header {
   background: initial;
-  background-color: #272757;
+  background-color: #a6a4df;
 }
 
 nav {
@@ -24,7 +24,7 @@ nav li a {
   text-decoration: none;
   font-size: 1.1rem;
   font-weight: bolder;
-  color: #a6a4df;
+  color: #272757;
 }
 
 nav li a:hover {
