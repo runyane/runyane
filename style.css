@@ -130,9 +130,6 @@ img.profile-pic {
   margin-top: 10px;
 }
 
-#about-me h3.title {
-  margin: 0;
-}
 
 #reflection h3 {
   font-weight: 600;
@@ -144,9 +141,15 @@ img.profile-pic {
   margin: 0 50px;
 }
 
+.education h2 {
+  font-family: "Roboto Mono", sans-serif;
+  margin: 10px 0;
+}
+
 .title {
   background-color: #e6e7ee;
   width: 100%;
+  margin: 0;
 }
 
 .education {
