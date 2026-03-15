@@ -7,7 +7,8 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  margin: 0 50px;
 }
 
 nav ul {
@@ -36,6 +37,10 @@ nav li a:hover {
 .header {
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+}
+
+.header img {
+  margin: 0 50px;
 }
