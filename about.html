@@ -39,7 +39,7 @@
     <header class="header">
       <!-- Logo and page title -->
       <img
-        src="images/Logo.jpg"
+        src="./media/images/Logo.jpg"
         alt="logo"
         style="width: 50px; border-radius: 10px">
 
@@ -48,7 +48,12 @@
           <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About Me</a></li>
-            <li><a href="#">Experience</a></li>
+            <li><a href="#">Experience</a>
+              <ul id="dropdown">
+                <li>Teacher Experiences</li>
+                <li>Developer Experiences</li>
+              </ul>
+            </li>
             <li><a href="reflection.html">Reflection</a></li>
             <li><a href="#">Contact</a></li>
           </ul>
@@ -79,8 +84,8 @@
         design.
       </p>
       <img
-        src="/images/profile-placeholder.jpg"
-        alt="pic"
+        src="./media/images/profile-placeholder.jpg"
+        alt="author profile picture"
         class="profile-pic">
       <p>
         As a professional, I love the process of creating content and designing
@@ -121,14 +126,18 @@
 
     <section class="media">
       <!-- Professional PPT Video -->
-      <div class="video">
-        <h3>Professional Video</h3>
-      </div>
+       <div class="video">
+        
+        <video src="/media/videos/Runyan Resume PPT Video.mp4" controls> <source src="./media/videos/Runyan Resume PPT Video.mp4" type="video/mp4">Your browser does not support the video tag. </video>
+        <h3>Take a look!</h3>
+       </div>
+      
+      
 
       <!-- Resume section -->
       <div class="resume">
         <h3>Resume</h3>
-        <a href="/webcontent/ERunyan_Resume.pdf">Download<br>My Resume</a>
+        <a href="/Eleanor Resume.pdf">Download<br>My Resume</a>
       </div>
     </section>
 

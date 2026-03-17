@@ -66,19 +66,22 @@ img.profile-pic {
   justify-self: center;
 }
 
-#reflection p:nth-child(2) {
+#reflection p:nth-child(3) {
   background-color: #e6e7ee;
   text-indent: 2rem;
+}
+
+#reflection p:nth-child(5) {
+  background-color: #e6e7ee;
+}
+
+#reflection p:nth-child(6) {
+ text-indent: 2rem;
 }
 
 #about-me p:nth-child(3),
 #reflection p:nth-child(4) {
   background-color: #e6e7ee;
-}
-
-#reflection p:nth-child(5) {
-  background-color: #e6e7ee;
-  text-indent: 2rem;
 }
 
 #about-me p:nth-child(4) {
@@ -234,7 +237,7 @@ img.profile-pic {
   align-items: center;
   justify-content: space-around;
   padding: 20px 0;
-  height: 300px;
+
 }
 
 .resume a {
@@ -260,19 +263,25 @@ img.profile-pic {
   background-color: #272757;
 }
 
-.resume,
-.video {
+.resume {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.video {
+video {
   color: #a6a4df;
   border: 1px solid #272757;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  height: 400px;
   background-color: #272757;
-  border-radius: 100%;
+}
+
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
