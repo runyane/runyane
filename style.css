@@ -58,12 +58,21 @@ section#reflection {
 }
 
 img.profile-pic {
-  width: 250px;
+  width: auto;
   height: 250px;
   border-radius: 15px;
   grid-row: 3;
   align-self: center;
   justify-self: center;
+}
+
+img.placeholder {
+  width: 250px;
+  height: 200px;
+  grid-row: inherit;
+  grid-column: 3;
+  justify-self: center;
+  align-self: center;
 }
 
 #reflection p:nth-child(3) {
@@ -273,9 +282,12 @@ img.profile-pic {
 video {
   color: #a6a4df;
   border: 1px solid #272757;
+  border-radius: 10px;
   width: 400px;
   height: 400px;
   background-color: #272757;
+  margin: 0;
+  padding: 0 5px;
 }
 
 .video {
