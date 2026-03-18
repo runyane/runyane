@@ -242,6 +242,11 @@ img.placeholder {
   align-items: center;
 }
 
+.resume h3 {
+  padding: 0;
+  margin: 2px;
+}
+
 /* About Me media styles */
 
 .media {
@@ -250,7 +255,6 @@ img.placeholder {
   align-items: center;
   justify-content: space-around;
   padding: 20px 0;
-
 }
 
 /* About Me video styles */
@@ -267,6 +271,18 @@ video {
   padding: 10px;
 }
 
+figure {
+  display: block;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+figcaption {
+  font-size: .8rem;
+  font-weight: bold;
+}
+
 /* Reflection Styles  */
 .container {
   display: block;
@@ -275,6 +291,8 @@ video {
   border: none;
   border-top-left-radius: 3px;
   border-top-right-radius: 3px;
+  width: 100%;
+  height: 100%;
 }
 #reflection {
   margin: 0 50px;
