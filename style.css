@@ -102,7 +102,7 @@ section#reflection {
   border-bottom-left-radius: 0;
   border-top-left-radius: 0;
   margin-top: 50px;
-  padding: 5px 3px;
+  padding: 5px 12px;
 }
 
 .hero div a {
@@ -257,22 +257,17 @@ img.placeholder {
 
 video {
   color: #a6a4df;
-  border: 1px solid #272757;
+  border-top: 1px solid #272757;
+  border-left: 1px solid #272757;
   border-radius: 10px;
   width: 400px;
-  height: 400px;
-  background-color: #272757;
+  height: 230px;
+  background-color: #a6a4df;
   margin: 0;
-  padding: 0 5px;
+  padding: 10px;
 }
 
-.video {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
-}
+
 
 /* Reflection Styles  */
 #reflection {
