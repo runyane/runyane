@@ -48,31 +48,36 @@ nav li a:hover {
 }
 
 /* Dropdown Nav */
-nav > ul li {
-  font-family: "Old Standard TT";
-  width: 100px;
+#dropdown {
   position: relative;
-  text-align: left;
-  font-weight: 600;
-  font-size: 1rem;
-  color: #272757;
-  margin-bottom: 2px;  list-style-type: none;
-
 }
 
-nav ul > li ul {
+#dropdown-content {
   position: absolute;
-  padding: 5px;
-  margin-top: 10px;
+  top:100%;
+  z-index: 1;
+  background-color: #a6a4df;
+  padding: 3px 5px;
+  margin: 2px 6px;
   display: none;
 }
 
-ul li #dropdown {
-  border-radius: 5px;
+#dropdown-content a {
+float: none;
+color: #272757;
+font-size: 1rem;
+padding: 3px 0px;
+text-decoration: none;
+display: block;
+width: 150px;
+}
+
+#dropdown-content a:link, #dropdown-content a:active {
+  color: #272757;
   font-size: 1rem;
 }
 
-nav > ul > li:hover > ul {
+#dropdown:hover #dropdown-content, #dropdown-content a:hover {
   display: block;
-background-color: #a6a4df;
+  color: #e6e7ee;
 }
