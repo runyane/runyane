@@ -49,6 +49,112 @@ section#reflection {
   margin-bottom: 50px;
 }
 
+/* Contact Page Styles */
+
+#contact-page {
+  width: 100%;
+  margin: 10px 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.contact-title {
+  margin: 25px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.contact-title h1 {
+  font-family: "Robato Mono", serif;
+  font-size: 3rem;
+  line-height: 2;
+
+}
+
+.contact-title p {
+  font-family: "Old Standard TT", sans-serif;
+  font-size: 1rem;
+}
+
+.contact-header {
+  background-color: #a6a4df;
+  border-radius: 12px;
+  width: 50%;
+  height: 300px;
+  width: 400px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 5px 13px;
+}
+
+fieldset.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+fieldset.contact-type {
+  display: block;
+}
+
+select {
+  width: 20%;
+}
+
+select, input[type="text"] {
+  height: 25px;
+}
+
+input[type="text"], input[type="email"] {
+  width: 100%;
+  padding: 0 3px;
+}
+
+button {
+  width: 25%;
+  margin: 10px 0;
+  padding: 10px 0;
+  border: none;
+  border-radius: 5px;
+  box-shadow: .8px .8px .8px #272757;
+  cursor: pointer;
+  background-color: #a6a4df;
+  font-size: .9rem;
+  color: #272757;
+
+}
+
+button:hover {
+  background-color: #272757;
+  color: #fff;
+}
+
+label {
+  font-size: 1rem;
+  line-height: 2;
+  font-family: "Old Standard TT", sans-serif;
+}
+
+legend {
+  font-size: .8rem;
+  font-family: "Roboto Mono";
+}
+
+
 /* Hero Styles */
 .hero {
   margin: 0;
@@ -206,6 +312,7 @@ img.placeholder {
 
 .resume a {
   color: #272757;
+  font-family: "Old Standard TT", serif;
   background-color: #a6a4df;
   width: 200px;
   height: 200px;
@@ -213,9 +320,9 @@ img.placeholder {
   font-weight: 600;
   border-radius: 10%;
   text-align: center;
-  line-height: 1.4;
+  line-height: 2;
   text-decoration: none;
-  border: 2px solid #272757;
+  border: none;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -236,7 +343,7 @@ img.placeholder {
 
 .resume h3 {
   padding: 0;
-  margin: 2px;
+  margin: 25px;
 }
 
 /* About Me media styles */

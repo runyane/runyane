@@ -2,7 +2,7 @@
 <html lang="en">
   <!--
   Name: E. Runyan
-  Date: Feb. 15, 2026
+  Date: Feb. 2, 2026
   Course: IS_LT 4355-7355
   Description: Web Design and Development
 -->
@@ -14,14 +14,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Website title -->
-    <title>Professional Portfolio Homepage</title>
+    <title>Runyan Personal Portfolio: Contact Me</title>
 
     <!-- Link to external CSS for styling -->
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="nav.css">
 
     <link rel="shortcut icon" type="image/x-icon" href="media/images/favicon.ico">
-
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -33,16 +33,15 @@
     <link
       href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
       rel="stylesheet">
+     
   </head>
-
-  <!-- Body section content-->
 
   <body>
     <!-- Header section -->
     <header class="header">
       <!-- Logo and page title -->
       <img
-        src="./media/images/Logo.jpg"
+        src="media/images/Logo.jpg"
         alt="logo"
         style="width: 50px; border-radius: 10px">
 
@@ -64,23 +63,43 @@
       </nav>
     </header>
 
-    <!-- Hero section with comment, quote, and background image -->
-    <section class="hero">
-      <h1>
-        Runyan Educator <br>
-        Portfolio
-      </h1>
-
-      <div>
-        <p>Education should be enjoyable and practical.</p>
-
-        <a href="">Learn More</a>
-      </div>
-      <blockquote>
-        “All of life is a constant education.” ― Eleanor Roosevelt, The Wisdom
-        Of Eleanor Roosevelt
-      </blockquote>
-    </section>
+  <section id="contact-page">
+    <div class="contact-title">
+      <div class="contact-header">
+      <h1>Contact <br> Me</h1>
+      <p>For more information</p>
+    </div>
+    </div>
+    <form action="">
+      <fieldset class="contact-info">
+        <legend>Contact Information</legend>
+      <label for="title">Title:</label>
+      <select name="title" id="user-title" required>
+        <option value="Ms.">Ms.</option>
+        <option value="Mr.">Mr.</option>
+        <option value="Mrs.">Mrs.</option>
+        <option value="Ms.">Ms.</option>
+        <option value="Dr.">Dr.</option>
+      </select>
+ 
+      <label for="name">Full name:</label>
+      <input type="text" name="name" id="user-name" placeholder="First and last name" required>
+      
+      <label for="email" >Email:</label>
+      <input type="text" name="email" id="email" placeholder="example@email.com" required>
+    </fieldset>
+    <fieldset class="contact-type">
+      <legend>Comment or Question</legend>
+      <input type="checkbox" name="commentbtn" id="commentbtn">
+      <label for="commentbtn">Comment</label>
+      <input type="checkbox" name="question" id="question">
+      <label for="question">Question</label>
+    </fieldset>
+      <label for="message">Message:</label>
+      <textarea name="message" id="user-message" cols="40" rows="10"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
 
     <!-- Footer section including author and date -->
     <footer>
