@@ -161,20 +161,26 @@ img.placeholder {
 
 /* About Me education styles */
 
-.education h2 {
-  font-family: "Roboto Mono", sans-serif;
+.education {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  margin: 0 50px;
 }
 
-.education {
-  margin: 0 50px;
+.education h2 {
+  font-family: "Roboto Mono", sans-serif;
+  grid-column: 1;
+  grid-row: 1;
 }
 
 .education ul  {
   font-family: "Old Standard TT", serif;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   line-height: 1.5rem;
   padding: 5px 3px;
   list-style-position: inside;
+  grid-row: 2;
 }
 
 .education ul li {
@@ -183,43 +189,41 @@ img.placeholder {
 }
 
 .education ul li:nth-child(1){
-  background-color: #a6a4df;
+  background-color: #272757;
+  color: #e6e7ee;
   border-radius: 10px;
 }
 
 .education ul li:nth-child(3){
-  background-color: #a6a4df;
+  background-color: #272757;
+  color: #e6e7ee;
   border-radius: 10px;
-}
-
-@media (max-width: 768px) {
-  .education ul li {
-    font-size: 1.2rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .education ul li {
-    font-size: 1rem;
-  }
 }
 
 /* About Me resume styles */
 
 .resume {
-  width: 200px;
-  height: 200px;
-  border-radius: 10%;
-  border: none;
+  grid-row: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 250px;
+  height: 250px;
+  background-color: #a6a4df;
+  border-radius: 50%;
+  border: none;
+  justify-self: center;
+  align-self: center;
+  margin: 10px;
+  padding: 10px;
 }
 
 .resume h3 {
+  font-family: "Roboto Mono", sans-serif;
   padding: 0;
   margin: 25px;
+  color: #272757;
 }
 
 .resume a {
@@ -232,9 +236,52 @@ img.placeholder {
   font-family: "Old Standard TT", serif;
 }
 
+.resume a:link {
+  letter-spacing: 1.5px;
+  text-shadow: 2px 2px 5px #a6a4df;
+}
+
 .resume a:hover {
-  color: #a6a4df;
-  background-color: #272757;
+  text-decoration: underline;
+  color: #e6e7ee;
+}
+
+@media (max-width: 768px) {
+  .education ul li {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .education {
+    justify-content: center;
+  }
+
+  .education h2 {
+    margin: 10px;
+    text-align: center;
+  }
+
+  .education ul li {
+    font-size: 1rem;
+  }
+
+  .education ul {
+    grid-row: 3;
+  }
+
+  .resume {
+    width: 150px;
+    height: 150px;
+  }
+
+  .resume h2 {
+    font-size: 1rem;
+  }
+
+  .resume a {
+    font-size: .8rem;
+  }
 }
 
 /* About Me media styles */
@@ -264,7 +311,7 @@ video {
   border-radius: 10px;
   width: 400px;
   height: 230px;
-  background-color: #a6a4df;
+  background-color: #272757;
   margin: 0;
   padding: 10px;
 }
@@ -286,8 +333,6 @@ figcaption {
 
 #contact-page {
   width: 100%;
-  margin: 10px 0;
-  padding: 0;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -296,7 +341,6 @@ figcaption {
 
 .contact-title {
   margin: 25px;
-  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -329,23 +373,39 @@ figcaption {
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  margin: 5px 13px;
+  margin: 10px 0;
+  width: 50%;
+  height: 100%;
+}
+
+fieldset {
+  padding: 0;
+  margin: 0;
 }
 
 fieldset.contact-info {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+}
+
+#email {
+ margin-bottom: 10px;
 }
 
 fieldset.contact-type {
   display: block;
 }
 
+fieldset.message-field {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
 select {
   width: 20%;
+  margin: 0 10px;
 }
 
 select, input[type="text"] {
@@ -353,22 +413,40 @@ select, input[type="text"] {
 }
 
 input[type="text"], input[type="email"] {
-  width: 100%;
+  width: 50%;
+  margin: 0 10px;
   padding: 0 3px;
 }
 
+textarea {
+  width: 100%;
+  height: 100px;
+  margin: 0;
+  padding: 0;
+}
+
+label {
+  font-size: 1rem;
+  line-height: 2;
+  font-family: "Old Standard TT", sans-serif;
+  margin: 0 10px;
+}
+
+legend {
+  font-size: 1rem;
+  font-family: "Roboto Mono";
+}
+
 button {
-  width: 25%;
-  margin: 10px 0;
-  padding: 10px 0;
+  width: 150px;
+  margin: 10px;
   border: none;
   border-radius: 5px;
   box-shadow: .8px .8px .8px #272757;
   cursor: pointer;
   background-color: #a6a4df;
-  font-size: .9rem;
+  font-size: 1.3rem;
   color: #272757;
-
 }
 
 button:hover {
@@ -376,17 +454,31 @@ button:hover {
   color: #fff;
 }
 
-label {
-  font-size: 1rem;
-  line-height: 2;
-  font-family: "Old Standard TT", sans-serif;
-}
+@media screen and (max-width: 768px){
+    #contact-page {
+      width: 100%;
+      flex-direction: column;
+    }
 
-legend {
-  font-size: .8rem;
-  font-family: "Roboto Mono";
-}
+    .contact-title {
+      width: 75%;
+    }
 
+    .contact-header {
+      width: 100%;
+      height: 100px;
+    }
+    .contact-title h1 {
+      font-size: 2rem;
+    }
+    .contact-title p {
+      font-size: .5rem;
+      margin-bottom: 10px;
+    }
+    form {
+      width: 75%;
+    }
+}
 
 /* Hero Styles */
 .hero {
@@ -550,40 +642,41 @@ footer p:nth-child(3) img {
 
 @media print {
 
-  body, h1, h2, p, ul, li {
-    background-color: none;
+  body, #about-me, p {
+    background-color: #FFF;
     font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    max-width: 100%;
     color: #000;
     font-size: 12pt;
   }
 
-  a {
-    text-decoration: underline;
-  }
-
   #about-me p {
-    margin: 3px;
     padding: 0;
+    text-indent: 20px;
+    background-color: #FFF;
   }
 
-  .resume a {
-    border: none;
+  #about-me p:nth-child(2), #about-me p:nth-child(5), 
+  .education ul li:nth-child(1), .education ul li:nth-child(3), header {
+    background-color: #FFF;
+    color: #000;
+  }
+
+  .resume {
     margin: 0;
     padding: 0;
-    width: 150px;
-    height: 100px;
+    background-color: #FFF;
   }
 
-  @page {
-    size: letter;
-    margin: 1cm;
- }
+  .resume a:link {
+    text-shadow: none;
+  }
 
- img, nav ul li, .media video, figure, h3 {
+ #about-me p:nth-child(3), H3, img, nav ul li, .media video, figure, footer, header {
     display: none;
+  }
+
+  h1 {
+    margin-top: 5px;
   }
 
   h1, h2, h3 {
@@ -591,21 +684,10 @@ footer p:nth-child(3) img {
     color: #000;
   }
 
-  .education ul li {
-    font-size: 12pt;
+  .education ul li{
+    font-size: 10px;
+    color: #000;
   }
+  
 
-  #about-me p:nth-child(6) {
-    grid-column: 1 / 4;
-  }
-  #about-me p:nth-child(3) {
-    grid-column: 1 / 4;
-  }
-}
-
-/* Extra Styling */
-.title {
-  background-color: #e6e7ee;
-  width: 100%;
-  margin: 0;
 }
