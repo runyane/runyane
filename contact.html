@@ -60,13 +60,13 @@
           <li><a href="reflection.html">Reflection</a></li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
-      </nav>
+      </nav> 
     </header>
 
   <section id="contact-page">
     <div class="contact-title">
       <div class="contact-header">
-      <h1>Contact <br> Me</h1>
+      <h1>Contact Me</h1>
       <p>For more information</p>
     </div>
     </div>
@@ -90,13 +90,15 @@
     </fieldset>
     <fieldset class="contact-type">
       <legend>Comment or Question</legend>
-      <input type="checkbox" name="commentbtn" id="commentbtn">
+      <input type="checkbox" name="commentbtn" id="commentbtn" required>
       <label for="commentbtn">Comment</label>
-      <input type="checkbox" name="question" id="question">
+      <input type="checkbox" name="question" id="question" required>
       <label for="question">Question</label>
     </fieldset>
+    <fieldset class="message-field">
       <label for="message">Message:</label>
-      <textarea name="message" id="user-message" cols="40" rows="10"></textarea>
+      <textarea name="message" id="user-message" cols="40" rows="10" required></textarea>
+    </fieldset>
       <button type="submit">Submit</button>
     </form>
   </section>
