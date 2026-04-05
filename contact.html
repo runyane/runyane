@@ -64,39 +64,40 @@
 
   <section id="contact-page">
     <div class="contact-title">
-      <div class="contact-header">
       <h1>Contact Me</h1>
       <p>For more information</p>
-    </div>
     </div>
     <form>
       <fieldset class="contact-info">
         <legend>Contact Information</legend>
-      <label>Title:</label>
+      <label class="user-info">Title:
       <select name="title" id="user-title" required>
         <option value="">Dr.</option>
         <option value="Mr." selected>Mr.</option>
         <option value="Mrs.">Mrs.</option>
         <option value="Ms.">Ms.</option>
         <option value="Ms.">Ms.</option>
-      </select>
+      </select></label>
  
-      <label>Full name:</label>
-      <input type="text" name="name" id="user-name" placeholder="First and last name" required>
+      <label class="user-info">Name:
+      <input type="text" name="name" id="user-name" placeholder="First, Last Name" required></label>
       
-      <label>Email:</label>
-      <input type="text" name="email" id="email" placeholder="example@email.com" required>
+      <label class="user-info">Email:
+      <input type="email" name="email" id="email" placeholder="example@email.com" required></label>
     </fieldset>
     <fieldset class="contact-type">
       <legend>Comment or Question</legend>
-      <input type="checkbox" name="commentbtn" id="commentbtn" required>
-      <label>Comment</label>
-      <input type="checkbox" name="question" id="question" required>
-      <label>Question</label>
+
+      <p>Type of contact:</p>
+      
+      <label class="message-type">Comment: <input type="checkbox" name="commentbtn" id="commentbtn" required></label>
+      
+      <label class="message-type">Question: <input type="checkbox" name="question" id="question" required></label>
+
     </fieldset>
     <fieldset class="message-field">
-      <label>Message:</label>
-      <textarea name="message" id="user-message" cols="40" rows="10" required></textarea>
+      <label class="user-info">Message:
+      <textarea name="message" id="user-message" cols="20" rows="10" required placeholder="Add message"></textarea></label>
     </fieldset>
       <button type="submit">Submit</button>
     </form>

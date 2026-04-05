@@ -340,11 +340,15 @@ figcaption {
 }
 
 .contact-title {
-  margin: 25px;
+  background-color: #a6a4df;
+  border-radius: 12px;
+  width: 400px;
+  height: 300px;
+  margin: 0 50px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .contact-title h1 {
@@ -359,23 +363,9 @@ figcaption {
   font-size: 1rem;
 }
 
-.contact-header {
-  background-color: #a6a4df;
-  border-radius: 12px;
-  width: 50%;
-  height: 300px;
-  width: 400px;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
 form {
-  margin: 10px 0;
-  width: 50%;
-  height: 100%;
+  margin:25px;
+  width: 500px;
 }
 
 fieldset {
@@ -393,6 +383,10 @@ fieldset.contact-info {
  margin-bottom: 10px;
 }
 
+fieldset {
+  margin-top: 10px;
+}
+
 fieldset.contact-type {
   display: block;
 }
@@ -400,37 +394,50 @@ fieldset.contact-type {
 fieldset.message-field {
   display: flex;
   flex-direction: column;
-  border: none;
+}
+
+fieldset p {
+  font-size: 1rem;
+  line-height: 2;
+  font-family: "Old Standard TT", sans-serif;
+  margin-left: 10px;
 }
 
 select {
   width: 25%;
   padding: 5px 3px;
-  margin: 0 10px;
+  margin: 0;
 }
 
-select, input[type="text"] {
+select, input[type="text"], input[type="email"] {
   height: 25px;
 }
 
 input[type="text"], input[type="email"] {
   width: 50%;
-  margin: 0 10px;
+  margin: 0;
   padding: 0 3px;
 }
 
 textarea {
-  width: 100%;
-  height: 100px;
-  margin: 0;
-  padding: 0;
+  margin: 10px 0;
+  padding: 10px 8px;
 }
 
-label {
+label.user-info {
   font-size: 1rem;
   line-height: 2;
   font-family: "Old Standard TT", sans-serif;
   margin: 0 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+label.message-type {
+  font-size: 1rem;
+  line-height: 2;
+  font-family: "Old Standard TT", sans-serif;
+  margin: 10px;
 }
 
 legend {
@@ -440,7 +447,9 @@ legend {
 
 button {
   width: 150px;
-  margin: 10px;
+  height: 50px;
+  margin: 10px 0;
+  padding: 10px 0;
   border: none;
   border-radius: 5px;
   box-shadow: .8px .8px .8px #272757;
@@ -455,29 +464,44 @@ button:hover {
   color: #fff;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
+  .contact-title {
+    height: 200px;
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 768px){
     #contact-page {
-      width: 100%;
       flex-direction: column;
     }
 
     .contact-title {
       width: 75%;
+      height: 100px;
+      margin-bottom: 0;
+      margin-top: 25px;
     }
 
-    .contact-header {
-      width: 100%;
-      height: 100px;
-    }
     .contact-title h1 {
       font-size: 2rem;
     }
+
     .contact-title p {
       font-size: .5rem;
       margin-bottom: 10px;
     }
+
     form {
-      width: 75%;
+     width: 75%;
+     margin-top: 25px;
+    }
+
+    fieldset.contact-type {
+      margin-top: 0;
+    }
+
+    textarea {
+      margin-top: 0;
     }
 }
 
