@@ -40,30 +40,53 @@
     <!-- Body section content-->
 
     <!-- Header section -->
-    <header class="header">
+    <header>
       <!-- Logo and page title -->
+       <div class="logo-container">
       <img
         src="media/images/Logo.jpg"
         alt="logo"
-        style="width: 50px; border-radius: 10px">
+        class="logo-img">
+      </div>
 
-        <!-- Nav -->
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About Me</a></li>
-            <li id="dropdown">
-              <a href="#">Experience</a>
-               <div id="dropdown-content">
-                <a href="#">Teacher Experiences</a>
-                <a href="#">Developer Experiences</a>
-              </div>
-            </li>
-            <li><a href="reflection.html">Reflection</a></li>
-            <li><a href="contact.html">Contact</a></li>
-          </ul>
-        </nav>
-       
+      <!-- Mobile Nav -->
+      <nav id="nav-container">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <img src="media/images/icons8-menu-50.png" alt="menu" class="hamburger-menu">
+        </label>
+        <div class="nav-mobile">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+          <div id="dropdown">
+            <a href="#">Experience</a>
+             <div id="dropdown-content">
+              <a href="#">Teacher Experiences</a>
+              <a href="#">Developer Experiences</a>
+            </div>
+          </div>
+          
+          <a href="reflection.html">Reflection</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Nav -->
+      <nav id="top-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li id="dropdown">
+            <a href="#">Experience</a>
+             <div id="dropdown-content">
+              <a href="#">Teacher Experiences</a>
+              <a href="#">Developer Experiences</a>
+            </div>
+          </li>
+          <li><a href="reflection.html">Reflection</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
     </header>
 
     <!-- Website content -->
