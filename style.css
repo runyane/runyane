@@ -772,6 +772,20 @@ button:hover {
   color: #e6e7ee;
 }
 
+
+/* Project Styles */
+
+main {
+  margin: 10px;
+
+}
+
+main h1 {
+font-size: 2rem;
+}
+
+
+
 /* Reflection Styles  */
 .container {
   display: block;
