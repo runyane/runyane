@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+  <!--
+  Name: E. Runyan
+  Date: Feb. 2, 2026
+  Course: IS_LT 4355-7355
+  Description: Web Design and Development
+-->
+
+  <!-- Head section -->
+
+  <head>
+    <!-- Meta data for charset and responsive viewport -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Website title -->
+    <title>My Starter Template</title>
+
+    <!-- Link to external CSS for styling -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="nav.css">
+
+    <link rel="shortcut icon" type="image/x-icon" href="media/images/favicon.ico">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet">
+     
+  </head>
+
+  <body>
+    <!-- Header section -->
+    <header>
+      <!-- Logo and page title -->
+       <div class="logo-container">
+      <img
+        src="media/images/Logo.jpg"
+        alt="logo"
+        class="logo-img">
+      </div>
+
+      <!-- Mobile Nav -->
+      <nav id="nav-container">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <img src="media/images/icons8-menu-50.png" alt="menu" class="hamburger-menu">
+        </label>
+        <div class="nav-mobile">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Me</a>
+          <div id="dropdown">
+            <a href="project.html">Experience</a>
+             <div id="dropdown-content">
+              <a href="#">Reflection</a>
+              <a href="#">Philosophy</a>
+            </div>
+          </div>
+          <a href="contact.html">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Desktop Nav -->
+      <nav id="top-nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li id="dropdown">
+            <a href="#">Experience</a>
+             <div id="dropdown-content">
+              <a href="#">Reflection</a>
+              <a href="#">Philosophy</a>
+            </div>
+          </li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <h1>Experience</h1>
+      <section class="experience">
+        <div class="card">
+          <h2>Teacher Leader</h2>
+          <div class="summary">
+            <p>One aspect of being an educator that I take immense pride in is helping other teachers hone their practice as a Teacher Leader. As a Teacher Leader I mentored teachers through various aspects of instruction. We focused on instructional practices that foster learning and collaboration. Together, other teachers and I discussed challeneges and strengths. Determining areas of improvement and identying aspects of current lessons that worked well was cruical. Multiple sessions of observation coupled with regular breakdown help veteran and novice teachers. Together we worked to craft effective strategies to foster learning in the classroom.</p>
+          </div>
+          <div class="featured">
+            <h3>Featured highlights</h3>
+            <ul>
+              <li>Modeled bests practices</li>
+              <li>Identified areas of growth through observations</li>
+              <li>Provided strategies for organization and classroom management</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h2>District Learning Day Facilitator</h2>
+          <div class="summary">
+            <p>This experience took me out of my comfort zone where I helped to implement the adoption of a new curriculum throughout the district. Each year my districts teachers come together for a few days of collaborative learning on new practices in the field. As a member of the facilitation team, I worked to educate educators on the ins and outs of our new curriculum. Using the provided materials, my colleagues and I dived into the district lessons. We were able to provide detailed guidance where to find lesson plans, where standards are located, or how to approach specific concepts or sections. Being a part of an integral part of adopting a curriculum conveyed the importance of supporting colleagues and all teachers. </p>
+          </div>
+          <div class="featured">
+            <h3>Featured highlights</h3>
+            <ul>
+              <li>Facilitated lessons on curriculum implementation</li>
+              <li>Collaborated with other teacher leaders to provide modeling and strategies</li>
+              <li>Identified concerns with the curriculum</li>
+            </ul>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Project: Udemy Course Food Blog Website</h2>
+          <div class="summary">
+            <p>For a variety of reasons, last summer I decided to try out Udemy's Software Engineering course, one of the many bootcamp programs for learning how to code. In its capstone project, this course asked students to code a food blog website using the many languages that were highlighted throughout the course. For me, this course was my first real dive into javascript. I found the project to be difficult and gratifying. Some of my favorite aspects were content and style. The modular aspects of the blog made it easy to be flexable with the tools. Choosing the recipes, adding the layout, and styling each section was challenging. I wrestled with adding functionality. In the end, the project turned out better than expected and I enjoyed the challenge.</p>
+          </div>
+          <div class="featured">
+            <h3>Featured highlights</h3>
+            <ul>
+              <li>Implemented functionality using node.js and EJS</li>
+              <li>Modular design using HTML and Bootstrap</li>
+              <li>User friendly design with multiple pages</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      
+      <article>
+        <div id="reflection">
+          <h4>Reflecting on the Profession</h4>
+          <p>As a middle school English language Arts (ELA) teacher, I find empowering young minds to be a rewarding experience. Middle school is where young people just begin to discover who they are. At the same time, I help them to build a foundation through which they can support their furthering education. Throughout my career, I encourage my students to see their English studies not just as another class to check off, but instead lessons on how to communicate effective and efficiently.</p>
+          <p>Fundamental English studies begin in middle school, where students study learn how to share their thoughts and feelings in a clear and understandable way. English is boring to students of this age, and in my practice, I try to convey the importance of word choice, not just in their writing but everyday choices as well. Engaging discussion on how authors craft their writing conveys to students how their words matter in every situation. Ultimately, I hope to impart my students with the power to communicate effectively throughout their lives. </p>
+        </div>
+        <div id="philosophy">
+          <h4>Teaching Philosophy</h4>
+          <p>I believe that learning should be practical and fun with the goal of acquiring the knowledge needed to live fulfilling and enriching lives. My students learn how to structure and organize their academic goals to prepare them to be the best learners they can be. Education can be a vast hurdle for many students. My goal is to impart my students with the skills and knowledge necessary to support their educational goals throughout their lives.</p>
+          <p>To my greatest amazement, one of my warmest teaching moments comes when I am out and about in my community and come across my former students in their later years. I regularly find them making a difference to the community in a variety of ways. From the local parks to grocery stores, it’s wonderful to see my students become productive and well-rounded members of society. My great joy is seeing them succeed as young adults, in all their endeavors.</p>
+        </div>
+      </article>
+    </main>
+
+    <!-- Footer section including author and date -->
+    <footer>
+      <div class="logo-container">
+        <img class="logo"
+        src="media/images/Logo.jpg"
+        alt="logo">
+      </div>
+      <div class="footer-time">
+        <p>
+        <time datetime="2026-02-03"> Feburary 3, 2026</time>
+        </p>
+      </div>
+      <div class="footer-content">
+        <p>E. Runyan</p>
+          
+        <p><a href="tel:+5555555555">
+        555-555-5555</a></p>
+        <img src="media/images/icons8-call-50.png" alt="phone number icon" class="footer-icon">
+        <p><a href="mailto:erk63@missouri.edu">
+        erk63@missouri.edu</a></p>
+        <img src="media/images/icons8-email-24.png" alt="email icon" class="footer-icon">
+        </div>
+    </footer>
+  </body>
+</html>

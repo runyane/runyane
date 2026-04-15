@@ -101,6 +101,7 @@ nav li a:hover {
   z-index: 1;
   padding: 3px 5px;
   margin: 2px 6px;
+  width: 120px;
   display: none;
 }
 
@@ -111,7 +112,7 @@ font-size: 1rem;
 padding: 1rem 1.5rem;
 text-decoration: none;
 display: block;
-width: 200px;
+
 }
 
 #dropdown-content a:link, #dropdown-content a:active {
@@ -137,7 +138,7 @@ width: 200px;
   }
 
   .nav-mobile {
-    top: 75px;
+    top: 55px;
     right: 0px;
     width: 50%;
     }
@@ -153,19 +154,19 @@ width: 200px;
     }
 
   #dropdown-content {
-    top: 30px;
-    right: 200px;
-    padding: 1rem 1.5rem;
+    top: 10px;
+    right: 100px;
     background-color: #272757;
+    padding: 0;
+    width: 100%;
     }
 
-  #dropdown-content a {
+  #dropdown-content a,
+  #dropdown-content a:link {
     color: #a6a4df;
   }
 
   #dropdown-content a:hover {
-    text-decoration: underline;
-    color: #e6e7ee;
-    background-color: #272757;
+    color: #272757;
   }
 }
