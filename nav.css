@@ -90,22 +90,22 @@ nav li a:hover {
 }
 
 /* Dropdown Nav */
-#dropdown {
+#dropdown, #mobile-dropdown {
   position: relative;
 }
 
-#dropdown-content {
+#dropdown-content, #mobile-dropdown-content {
   position: absolute;
   top: 43px;
   right: 10px;
   z-index: 1;
   padding: 3px 5px;
   margin: 2px 6px;
-  width: 120px;
+  width: 150px;
   display: none;
 }
 
-#dropdown-content a {
+#dropdown-content a, #mobile-dropdown-content a{
 float: none;
 color: #272757;
 font-size: 1rem;
@@ -115,13 +115,14 @@ display: block;
 
 }
 
-#dropdown-content a:link, #dropdown-content a:active {
+#dropdown-content a:link, #dropdown-content a:active, #mobile-dropdown-content a:link, #mobile-dropdown-content a:active {
   color: #272757;
   text-decoration: underline;
   font-size: 1rem;
 }
 
-#dropdown:hover #dropdown-content, #dropdown-content a:hover {
+#dropdown:hover #dropdown-content, #dropdown-content a:hover,
+#dropdown-content a:link, #dropdown-content a:active {
   display: block;
   color: #e6e7ee;
 }
@@ -153,7 +154,7 @@ display: block;
     background-color: #a6a4df;
     }
 
-  #dropdown-content {
+  #dropdown-content, #mobile-dropdown-content {
     top: 10px;
     right: 100px;
     background-color: #272757;
@@ -162,11 +163,11 @@ display: block;
     }
 
   #dropdown-content a,
-  #dropdown-content a:link {
+  #dropdown-content a:link, #mobile-dropdown-content a, #mobile-dropdown-content a:link{
     color: #a6a4df;
   }
 
-  #dropdown-content a:hover {
+  #dropdown-content a:hover, #mobile-dropdown-content a:hover {
     color: #272757;
   }
 }
