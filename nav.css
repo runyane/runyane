@@ -121,8 +121,7 @@ display: block;
   font-size: 1rem;
 }
 
-#dropdown:hover #dropdown-content, #dropdown-content a:hover,
-#dropdown-content a:link, #dropdown-content a:active {
+#dropdown:hover #dropdown-content, #dropdown-content a:hover #dropdown-content {
   display: block;
   color: #e6e7ee;
 }
