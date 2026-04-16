@@ -96,13 +96,14 @@ nav li a:hover {
 
 #dropdown-content, #mobile-dropdown-content {
   position: absolute;
-  top: 43px;
+  top: 20px;
   right: 10px;
   z-index: 1;
   padding: 3px 5px;
   margin: 2px 6px;
   width: 150px;
   display: none;
+  
 }
 
 #dropdown-content a, #mobile-dropdown-content a{
@@ -121,7 +122,7 @@ display: block;
   font-size: 1rem;
 }
 
-#dropdown:hover #dropdown-content, #dropdown-content a:hover #dropdown-content {
+#dropdown:hover #dropdown-content{
   display: block;
   color: #e6e7ee;
 }
