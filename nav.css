@@ -180,6 +180,6 @@ display: block;
 
 
   #mobile-dropdown:hover #mobile-dropdown-content {
-    display: block;
+    display: none;
   }
 }
