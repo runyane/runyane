@@ -1190,7 +1190,7 @@ tbody {
 
 #reflection th {
   font-size: 1rem;
-  /* background-color: #e6e7ee; */
+  background-color: #e6e7ee;
   border: 1px solid black;
   padding: 5px;
   text-align: center;
@@ -1395,7 +1395,6 @@ footer {
   justify-content: space-between;  
   padding: 0;
   margin: 0;
-  height: 80px;
   background-color: #a6a4df;
 }
 
