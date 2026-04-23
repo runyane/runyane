@@ -840,9 +840,10 @@ article {
   text-align: left;
 }
 
-.card .caption {
+span, span a {
   text-align: center;
   font-size: .3rem;
+  margin-bottom: 10px;
 }
 
 #experience {
@@ -875,6 +876,10 @@ article {
 #experience div.card:nth-child(3){
   grid-row: 2;
   grid-column: 2;
+}
+
+#experience div.card:nth-child(4) span {
+  margin-bottom: 0;
 }
 
 
