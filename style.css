@@ -1409,7 +1409,7 @@ footer {
 }
 
 footer p, a {
-  font-size: .5rem;
+  font-size: 1rem;
   text-decoration: none;
   text-align: right;
 }
@@ -1432,7 +1432,7 @@ img.logo {
 }
 
 .footer-content {
-  width: 150px;
+  /* width: 150px; */
   margin: 10px;
   display: grid;
   grid-template-columns: 1fr 10%;
@@ -1477,6 +1477,18 @@ img.logo {
   50% {transform: rotate(180deg);}
 }
 
+/* Medium devices (landscape tablets, up to 768px) */
+@media only screen and (max-width: 768px) {
+  .footer-copyright p {
+    font-size: .8rem;
+  }
+
+  .footer-content p, p a {
+    font-size: .8rem;
+  }
+}
+
+
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
 
@@ -1488,6 +1500,14 @@ img.logo {
     height: 75px;
     justify-content: space-evenly;
     align-items: center;
+  }
+
+  .footer-copyright p {
+    font-size: .5rem;
+  }
+
+  .footer-content p, p a {
+    font-size: .5rem;
   }
 }
 
