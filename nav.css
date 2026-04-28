@@ -48,7 +48,7 @@ label.checkbtn {
   cursor: pointer;
  }
 
- .nav-mobile, #check, #nav-container {
+ .nav-mobile, #check, #desktop-check, #nav-container {
   display: none;
  }
 
