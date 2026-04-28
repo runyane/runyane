@@ -9,6 +9,7 @@ body {
   height: 100vh;
 }
 
+/* Custom font from Google Fonts applied to site */
 h1 {
   font-family: "Roboto Mono", sans-serif;
   color: #272757;
@@ -17,6 +18,7 @@ h1 {
   margin: 0;
 }
 
+/* Custom font from Google Fonts applied to site */
 p, a {
   font-family: "Old Standard TT", serif;
   color: #272757;
